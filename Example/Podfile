@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WTAppLauncher_Example' do
+  pod 'WTAppLauncher', :path => '../'
+
+  target 'WTAppLauncher_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
