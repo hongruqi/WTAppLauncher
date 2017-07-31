@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, WTAppLauncherType) {
  如果有业务需要依赖之前的block 执行完， 可以调用这个api 进行处理。
  @param block run block
  */
-- (void)addNotificaitonGroupQueue:(dispatch_block_t) block;
+- (void)addNotificationGroupQueue:(dispatch_block_t) block;
 
 /**
  结束初始化调用函数，必须被调用，确保之前加入的block，在didFinishLaunching函数结束前，全部被执行完。

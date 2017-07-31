@@ -89,7 +89,7 @@
     });
 }
 
-- (void)addNotificaitonGroupQueue:(dispatch_block_t) block
+- (void)addNotificationGroupQueue:(dispatch_block_t) block
 {
     dispatch_group_notify(_launchGroup, _launchQueue, ^{
         block();
