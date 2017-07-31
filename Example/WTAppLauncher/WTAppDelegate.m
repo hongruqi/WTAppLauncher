@@ -7,12 +7,49 @@
 //
 
 #import "WTAppDelegate.h"
+#import "WTAppLauncher.h"
 
 @implementation WTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    WTAppLauncher *launcher = [[WTAppLauncher alloc] init];
+    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
+         NSLog(@"WTAppLauncherType_SerialQueue 1");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_WTGroupQueue block:^{
+        sleep(3);
+        NSLog(@"WTAppLauncherType_WTGroupQueue 1");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
+        NSLog(@"WTAppLauncherType_SerialQueue 2 ");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_MainThread block:^{
+        NSLog(@"WTAppLauncherType_MainThread");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_GrobalQueue block:^{
+        NSLog(@"WTAppLauncherType_GrobalQueue");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_WTGroupQueue block:^{
+         NSLog(@"WTAppLauncherType_WTGroupQueue 2");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
+        NSLog(@"WTAppLauncherType_SerialQueue 3 ");
+    }];
+    
+    [launcher addNotificaitonGroupQueue:^{
+         NSLog(@"addNotificaitonGroupQueue");
+    }];
+    
+    [launcher endLanuchingWithTimeout:10];
+    
     return YES;
 }
 

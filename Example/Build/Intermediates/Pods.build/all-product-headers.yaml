@@ -4,55 +4,60 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/Pods_WTAppLauncher_Example.framework/Headers",
+      'name': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/Pods_WTAppLauncher_Example.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-WTAppLauncher_Example-umbrella.h",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Pods/Target Support Files/Pods-WTAppLauncher_Example/Pods-WTAppLauncher_Example-umbrella.h"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Pods/Target Support Files/Pods-WTAppLauncher_Example/Pods-WTAppLauncher_Example-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_WTAppLauncher_Example-Swift.h",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/Pods_WTAppLauncher_Example.framework/Headers/Pods_WTAppLauncher_Example-Swift.h"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/Pods_WTAppLauncher_Example.framework/Headers/Pods_WTAppLauncher_Example-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/Pods_WTAppLauncher_Example.framework/Modules",
+      'name': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/Pods_WTAppLauncher_Example.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-WTAppLauncher_Example.build/module.modulemap"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-WTAppLauncher_Example.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/WTAppLauncher/WTAppLauncher.framework/Headers",
+      'name': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/WTAppLauncher/WTAppLauncher.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "WTAppLauncher-Swift.h",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/WTAppLauncher/WTAppLauncher.framework/Headers/WTAppLauncher-Swift.h"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/WTAppLauncher/WTAppLauncher.framework/Headers/WTAppLauncher-Swift.h"
         },
         {
           'type': 'file',
           'name': "WTAppLauncher-umbrella.h",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Pods/Target Support Files/WTAppLauncher/WTAppLauncher-umbrella.h"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Pods/Target Support Files/WTAppLauncher/WTAppLauncher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "WTAppLauncher.h",
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Classes/WTAppLauncher.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Products/Debug-iphoneos/WTAppLauncher/WTAppLauncher.framework/Modules",
+      'name': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Products/Debug-iphonesimulator/WTAppLauncher/WTAppLauncher.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/WTAppLauncher/Example/Build/Intermediates/Pods.build/Debug-iphoneos/WTAppLauncher.build/module.modulemap"
+          'external-contents': "/Users/hongruqi/Pods/WTAppLauncher/Example/Build/Intermediates/Pods.build/Debug-iphonesimulator/WTAppLauncher.build/module.modulemap"
         }
       ]
     }

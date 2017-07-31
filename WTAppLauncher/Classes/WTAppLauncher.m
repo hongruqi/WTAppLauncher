@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) dispatch_group_t launchGroup;
 @property (nonatomic, strong) dispatch_queue_t launchQueue;
+@property (nonatomic, strong) dispatch_queue_t serialQueue;
+
 //debug
 @property (nonatomic, assign) CFTimeInterval launchTime;
 
@@ -23,9 +25,9 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        
         _launchGroup = dispatch_group_create();
         _launchQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        _serialQueue = dispatch_queue_create("com.wtlauncher.queue", NULL);
         _launchTime = CACurrentMediaTime();
     }
     
@@ -38,11 +40,14 @@
         case WTAppLauncherType_MainThread:
             [self asyncRunLaunchInMainThread:block];
             break;
-        case WTAppLauncherType_XYGroupQueue:
+        case WTAppLauncherType_WTGroupQueue:
             [self asyncRunLaunchInXYGroupQueue:block];
             break;
-        case WTAppLauncherType_GrobalQueue:
+        case WTAppLauncherType_GlobalQueue:
             [self asyncRunLaunchInGlobalQueue:block];
+            break;
+        case WTAppLauncherType_SerialQueue:
+            [self syncRunLaunchInSerialQueue:block];
             break;
         default:
             break;
@@ -73,6 +78,20 @@
 - (void)asyncRunLaunchInGlobalQueue:(dispatch_block_t) block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        block();
+    });
+}
+
+- (void)syncRunLaunchInSerialQueue:(dispatch_block_t) block
+{
+    dispatch_sync(_serialQueue, ^{
+        block();
+    });
+}
+
+- (void)addNotificaitonGroupQueue:(dispatch_block_t) block
+{
+    dispatch_group_notify(_launchGroup, _launchQueue, ^{
         block();
     });
 }

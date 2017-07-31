@@ -1,5 +1,5 @@
 PODS:
-  - WTAppLauncher (0.1.0)
+  - WTAppLauncher (1.0.0)
 
 DEPENDENCIES:
   - WTAppLauncher (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  WTAppLauncher: 56aac34ed867dcbfec1bc42056dd9b4968e62734
+  WTAppLauncher: 84564e2e2847a45d47dea54740ae3db407855fde
 
 PODFILE CHECKSUM: 564cf2b0b9433d3dbcfa97161d32719256556b2f
 

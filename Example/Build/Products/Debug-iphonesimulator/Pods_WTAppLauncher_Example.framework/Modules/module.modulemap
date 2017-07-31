@@ -1,0 +1,6 @@
+framework module Pods_WTAppLauncher_Example {
+  umbrella header "Pods-WTAppLauncher_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
