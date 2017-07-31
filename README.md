@@ -82,7 +82,7 @@ Objc的load函数和C++的静态构造函数采用由底向上的方式执行，
 ####思路
 - 将需要执行的处理，放入不同的block内，并发到不同的queue中进行。
 - 提供串行队列，执行有依赖的逻辑
-- 提供group，对彼此依赖不明确，但需要整天执行完成后，进行处理的业务，提供dispatch_group功能满足需求。
+- 提供group，对彼此依赖不明确，但需要整体执行完成后，进行处理的业务，提供dispatch_group功能满足需求。
 - 对于MainThread有需要的业务，提供mainThread 支持。 
 #### 提供四个type选项执行启动block
 - WTAppLauncherType_WTGroupQueue 自定义group
@@ -90,21 +90,16 @@ Objc的load函数和C++的静态构造函数采用由底向上的方式执行，
 - WTAppLauncherType_GlobalQueue global queue 执行block
 - WTAppLauncherType_SerialQueue sync 执行 block
 
-> ```Objc
+#### WTAppLauncher Code
+ 
+ ```Objc
 typedef NS_ENUM(NSUInteger, WTAppLauncherType) {
     WTAppLauncherType_WTGroupQueue,
     WTAppLauncherType_MainThread,
     WTAppLauncherType_GlobalQueue,
     WTAppLauncherType_SerialQueue // 串行队列，放入有执行顺序的block
 };
-```
-#### WTAppLauncher 提供功能
-> 将业务相关的启动block 放入对应的Type内进行。
 
-> 最后在wait 全部执行后，进行splash 页面。
-> 业务不相关的放入全局global_queue 内进行初始化。
-
-```
 - (void)addLauncherWithType:(WTAppLauncherType )type block:(dispatch_block_t) block;
 
 /**
@@ -120,6 +115,7 @@ typedef NS_ENUM(NSUInteger, WTAppLauncherType) {
 - (void)endLanuchingWithTimeout:(float)timeout;
 
 ```
+
 
 - [今日头条iOS客户端启动速度优化](https://techblog.toutiao.com/2017/01/17/iosspeed/)
 - [苹果广告视频](https://developer.apple.com/videos/play/wwdc2016/406/)
