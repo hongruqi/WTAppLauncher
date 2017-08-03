@@ -19,7 +19,7 @@
          NSLog(@"WTAppLauncherType_SerialQueue 1");
     }];
     
-    [launcher addLauncherWithType:WTAppLauncherType_WTGroupQueue block:^{
+    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
         sleep(3);
         NSLog(@"WTAppLauncherType_WTGroupQueue 1");
     }];
@@ -32,11 +32,11 @@
         NSLog(@"WTAppLauncherType_MainThread");
     }];
     
-    [launcher addLauncherWithType:WTAppLauncherType_GrobalQueue block:^{
+    [launcher addLauncherWithType:WTAppLauncherType_GlobalQueue block:^{
         NSLog(@"WTAppLauncherType_GrobalQueue");
     }];
     
-    [launcher addLauncherWithType:WTAppLauncherType_WTGroupQueue block:^{
+    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
          NSLog(@"WTAppLauncherType_WTGroupQueue 2");
     }];
     
@@ -44,7 +44,7 @@
         NSLog(@"WTAppLauncherType_SerialQueue 3 ");
     }];
     
-    [launcher addNotificaitonGroupQueue:^{
+    [launcher addNotificationGroupQueue:^{
          NSLog(@"addNotificaitonGroupQueue");
     }];
     

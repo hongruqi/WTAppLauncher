@@ -26,8 +26,8 @@
 {
     if (self = [super init]) {
         _launchGroup = dispatch_group_create();
-        _launchQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        _serialQueue = dispatch_queue_create("com.wtlauncher.queue", NULL);
+        _launchQueue = dispatch_queue_create("com.wtlauncher.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
+        _serialQueue = dispatch_queue_create("com.wtlauncher..serial.queue", NULL);
         _launchTime = CACurrentMediaTime();
     }
     
@@ -40,8 +40,8 @@
         case WTAppLauncherType_MainThread:
             [self asyncRunLaunchInMainThread:block];
             break;
-        case WTAppLauncherType_WTGroupQueue:
-            [self asyncRunLaunchInXYGroupQueue:block];
+        case WTAppLauncherType_GroupQueue:
+            [self asyncRunLaunchInGroupQueue:block];
             break;
         case WTAppLauncherType_GlobalQueue:
             [self asyncRunLaunchInGlobalQueue:block];
@@ -58,41 +58,51 @@
 {
     dispatch_time_t groupTimeout = dispatch_time(DISPATCH_TIME_NOW, timeout*NSEC_PER_SEC);
     dispatch_group_wait(_launchGroup, groupTimeout);
-    NSLog(@"launch app time : %g s", CACurrentMediaTime() - self.launchTime);
+    NSLog(@"launch app end time : %g s", CACurrentMediaTime() - self.launchTime);
 }
 
 - (void)asyncRunLaunchInMainThread:(dispatch_block_t) block
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        CFTimeInterval start = CACurrentMediaTime();
         block();
+        NSLog(@"launch asyncRunLaunchInMainThread time : %g s", CACurrentMediaTime() - start);
     });
 }
 
-- (void)asyncRunLaunchInXYGroupQueue:(dispatch_block_t) block
+- (void)asyncRunLaunchInGroupQueue:(dispatch_block_t) block
 {
     dispatch_group_async(_launchGroup, _launchQueue, ^{
+        CFTimeInterval start = CACurrentMediaTime();
         block();
+        NSLog(@"launch asyncRunLaunchInGroupQueue time : %g s", CACurrentMediaTime() - start);
     });
 }
 
 - (void)asyncRunLaunchInGlobalQueue:(dispatch_block_t) block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        CFTimeInterval start = CACurrentMediaTime();
         block();
+        NSLog(@"launch asyncRunLaunchInGlobalQueue time : %g s", CACurrentMediaTime() - start);
     });
 }
 
 - (void)syncRunLaunchInSerialQueue:(dispatch_block_t) block
 {
     dispatch_sync(_serialQueue, ^{
+        CFTimeInterval start = CACurrentMediaTime();
         block();
+        NSLog(@"launch syncRunLaunchInSerialQueue time : %g s", CACurrentMediaTime() - start);
     });
 }
 
 - (void)addNotificationGroupQueue:(dispatch_block_t) block
 {
     dispatch_group_notify(_launchGroup, _launchQueue, ^{
+        CFTimeInterval start = CACurrentMediaTime();
         block();
+        NSLog(@"launch addNotificationGroupQueue time : %g s", CACurrentMediaTime() - start);
     });
 }
 

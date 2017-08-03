@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, WTAppLauncherType) {
-    WTAppLauncherType_WTGroupQueue,
+    WTAppLauncherType_GroupQueue,
     WTAppLauncherType_MainThread,
     WTAppLauncherType_GlobalQueue,
     WTAppLauncherType_SerialQueue // 串行队列，放入有执行顺序的block
