@@ -13,6 +13,7 @@
 @property (nonatomic, strong) dispatch_group_t launchGroup;
 @property (nonatomic, strong) dispatch_queue_t launchQueue;
 @property (nonatomic, strong) dispatch_queue_t serialQueue;
+@property (nonatomic, strong) dispatch_queue_t concurrentQueue;
 
 //debug
 @property (nonatomic, assign) CFTimeInterval launchTime;
@@ -26,8 +27,9 @@
 {
     if (self = [super init]) {
         _launchGroup = dispatch_group_create();
-        _launchQueue = dispatch_queue_create("com.wtlauncher.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
-        _serialQueue = dispatch_queue_create("com.wtlauncher..serial.queue", NULL);
+        _launchQueue = dispatch_queue_create("com.wtlauncher.group.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
+        _serialQueue = dispatch_queue_create("com.wtlauncher.serial.queue", NULL);
+        _concurrentQueue = dispatch_queue_create("com.wtlauncher.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
         _launchTime = CACurrentMediaTime();
     }
     
@@ -43,8 +45,8 @@
         case WTAppLauncherType_GroupQueue:
             [self asyncRunLaunchInGroupQueue:block];
             break;
-        case WTAppLauncherType_GlobalQueue:
-            [self asyncRunLaunchInGlobalQueue:block];
+        case WTAppLauncherType_ConcurrentQueue:
+            [self asyncRunLaunchInConcurrentQueue:block];
             break;
         case WTAppLauncherType_SerialQueue:
             [self syncRunLaunchInSerialQueue:block];
@@ -79,12 +81,21 @@
     });
 }
 
-- (void)asyncRunLaunchInGlobalQueue:(dispatch_block_t) block
+- (void)asyncRunLaunchInConcurrentQueue:(dispatch_block_t) block
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(_concurrentQueue, ^{
         CFTimeInterval start = CACurrentMediaTime();
         block();
-        NSLog(@"launch asyncRunLaunchInGlobalQueue time : %g s", CACurrentMediaTime() - start);
+        NSLog(@"launch asyncRunLaunchInConcurrentQueue time : %g s", CACurrentMediaTime() - start);
+    });
+}
+
+- (void)barrierAsyncRunLaunchInConcurrentQueue:(dispatch_block_t) block
+{
+    dispatch_barrier_async(_concurrentQueue, ^{
+        CFTimeInterval start = CACurrentMediaTime();
+        block();
+        NSLog(@"launch asyncRunLaunchInConcurrentQueue time : %g s", CACurrentMediaTime() - start);
     });
 }
 

@@ -11,13 +11,20 @@
 typedef NS_ENUM(NSUInteger, WTAppLauncherType) {
     WTAppLauncherType_GroupQueue,
     WTAppLauncherType_MainThread,
-    WTAppLauncherType_GlobalQueue,
+    WTAppLauncherType_ConcurrentQueue, //并行队列
     WTAppLauncherType_SerialQueue // 串行队列，放入有执行顺序的block
 };
 
 @interface WTAppLauncher : NSObject
 
 - (void)addLauncherWithType:(WTAppLauncherType )type block:(dispatch_block_t) block;
+
+/**
+ 等待barrier之前的ConcurrentQueue中的block操作执行完毕后，barrier中的block执行，并且在barrier函数执行之后,barrier函数之后的操作才会得到执行
+ 满足一些需要之前业务逻辑
+ @param block run block
+ */
+- (void)barrierAsyncRunLaunchInConcurrentQueue:(dispatch_block_t) block;
 
 /**
  add Group Queue notifiacition

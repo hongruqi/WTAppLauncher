@@ -32,12 +32,32 @@
         NSLog(@"WTAppLauncherType_MainThread");
     }];
     
-    [launcher addLauncherWithType:WTAppLauncherType_GlobalQueue block:^{
-        NSLog(@"WTAppLauncherType_GrobalQueue");
+    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
+        NSLog(@"WTAppLauncherType_ConcurrentQueue 1");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
+        NSLog(@"WTAppLauncherType_ConcurrentQueue 2");
     }];
     
     [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
-         NSLog(@"WTAppLauncherType_WTGroupQueue 2");
+         NSLog(@"WTAppLauncherType_GroupQueue 2");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
+        NSLog(@"WTAppLauncherType_GroupQueue 3");
+    }];
+    
+    [launcher barrierAsyncRunLaunchInConcurrentQueue:^{
+        NSLog(@"WTAppLauncherType_WTGroupQueue 2");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
+        NSLog(@"WTAppLauncherType_ConcurrentQueue 3");
+    }];
+    
+    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
+        NSLog(@"WTAppLauncherType_ConcurrentQueue 4");
     }];
     
     [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
