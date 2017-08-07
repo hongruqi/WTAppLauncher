@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WTAppLauncher'
-  s.version          = '2.1.0'
+  s.version          = '2.2.0'
   s.summary          = 'App launcher tools'
 
 # This description is used to generate tags and improve search results.
