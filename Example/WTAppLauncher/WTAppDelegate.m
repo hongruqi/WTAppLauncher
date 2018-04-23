@@ -7,69 +7,14 @@
 //
 
 #import "WTAppDelegate.h"
-#import "WTAppLauncher.h"
+#import "WTLauncherCenter.h"
 
 @implementation WTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    WTAppLauncher *launcher = [[WTAppLauncher alloc] init];
-    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
-         NSLog(@"WTAppLauncherType_SerialQueue 1");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
-        sleep(3);
-        NSLog(@"WTAppLauncherType_WTGroupQueue 1");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
-        NSLog(@"WTAppLauncherType_SerialQueue 2 ");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_MainThread block:^{
-        NSLog(@"WTAppLauncherType_MainThread");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
-        NSLog(@"WTAppLauncherType_ConcurrentQueue 1");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
-        NSLog(@"WTAppLauncherType_ConcurrentQueue 2");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
-         NSLog(@"WTAppLauncherType_GroupQueue 2");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_GroupQueue block:^{
-        NSLog(@"WTAppLauncherType_GroupQueue 3");
-    }];
-    
-    [launcher barrierAsyncRunLaunchInConcurrentQueue:^{
-        NSLog(@"WTAppLauncherType_WTGroupQueue 2");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
-        NSLog(@"WTAppLauncherType_ConcurrentQueue 3");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_ConcurrentQueue block:^{
-        NSLog(@"WTAppLauncherType_ConcurrentQueue 4");
-    }];
-    
-    [launcher addLauncherWithType:WTAppLauncherType_SerialQueue block:^{
-        NSLog(@"WTAppLauncherType_SerialQueue 3 ");
-    }];
-    
-    [launcher addNotificationGroupQueue:^{
-         NSLog(@"addNotificaitonGroupQueue");
-    }];
-    
-    [launcher endLanuchingWithTimeout:10];
-    
+    [[WTLauncherCenter defaultCenter] startAll];
     return YES;
 }
 

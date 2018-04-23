@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F52ECF5E9437A605945E2CCFB45559E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1DC210BF43AE85233BE50012D0FA4860 /* Pods-WTAppLauncher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE75604727F514B20DE7F96DCFC742A /* Pods-WTAppLauncher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2118A76274056CC1FDCFCB54910C14F1 /* Pods-WTAppLauncher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2770BAE2531F97A513BB857566043770 /* Pods-WTAppLauncher_Example-dummy.m */; };
+		4FF91D7D5EEBD150B383DD18CCF44D83 /* Pods-WTAppLauncher_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33476211BD1FC0FE239CF26E02C12569 /* Pods-WTAppLauncher_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		530A2318C782FCEE5A4E061CA6B0DC57 /* WTLauncherCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A08A3AB210BE0C75B526D07AEBEF2C3 /* WTLauncherCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		609F221BA04FA472F516CF0F6DAB5D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8721DFF4F2E1B8D4EC1DFECB0B01DD0F /* Pods-WTAppLauncher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86419CF8AEDF5E245B9C51FF6EEB6DF2 /* Pods-WTAppLauncher_Tests-dummy.m */; };
+		8F565F9B327EE07C31A00BAD9A43B19F /* WTAppLauncher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B2115E9A7175F2D6F9B55497424BCA /* WTAppLauncher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7ACDD32815D2ACF85706AE324B05F6E /* WTLauncherCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D32C17FA7524FD066730C9A254F869F /* WTLauncherCenter.m */; };
+		AC986140337C2CB3E78B12DC208B5AC2 /* WTLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 62343D41F626BEF09B3C8B6507F3F355 /* WTLauncher.m */; };
+		BBDAA9AB7210514818FA064257419724 /* WTLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = FD96B736D25FD434C3882654DC249350 /* WTLauncher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C351F40CF4480E875485EB666BB03B8E /* WTAppLauncher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53137EBFEED60385BB473684CC7EB7 /* WTAppLauncher-dummy.m */; };
+		F00A05BD5935A25ABE7E9577928A5BDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58C6DD7249956CCD90F77C30CAB6BE7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9325F2FCD14AE4F8A49D9806CA9B60E;
+			remoteInfo = WTAppLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018751FCE8ABD7630ADCD44591F31046 /* Pods-WTAppLauncher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTAppLauncher_Example-frameworks.sh"; sourceTree = "<group>"; };
+		045880185C63BA695135F28471C64EB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06EA70C081A34F0443063597DE3BD097 /* Pods-WTAppLauncher_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WTAppLauncher_Tests.modulemap"; sourceTree = "<group>"; };
+		0F7FF1EDC4417E64EE449B2C6E6FB1A8 /* Pods-WTAppLauncher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTAppLauncher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D53F6677D0DAB111E3DC00DE789B78C /* Pods-WTAppLauncher_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTAppLauncher_Tests-resources.sh"; sourceTree = "<group>"; };
+		1E316775CADF15D99250EED597FF7453 /* Pods-WTAppLauncher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTAppLauncher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FC2E430BD80D49CCB7579A398707A72 /* Pods_WTAppLauncher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTAppLauncher_Example.framework; path = "Pods-WTAppLauncher_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2770BAE2531F97A513BB857566043770 /* Pods-WTAppLauncher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTAppLauncher_Example-dummy.m"; sourceTree = "<group>"; };
+		2915AC7467B9E4F289CE5C1060B4F664 /* Pods_WTAppLauncher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTAppLauncher_Tests.framework; path = "Pods-WTAppLauncher_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C84086C110FAF522A8FF39D2216DDC /* Pods-WTAppLauncher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTAppLauncher_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		33476211BD1FC0FE239CF26E02C12569 /* Pods-WTAppLauncher_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTAppLauncher_Tests-umbrella.h"; sourceTree = "<group>"; };
+		495A32B157D85E356E7D5E6A0F3A7BAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEF08473A40F5F4580660D73D7CAC89 /* Pods-WTAppLauncher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTAppLauncher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		516852E164E751163D2650D8B5223A52 /* Pods-WTAppLauncher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTAppLauncher_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5213BAE80B8FC4D364E9D67E8A88113B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A80BBE23B5F00B4ACA0CD80D8485170 /* Pods-WTAppLauncher_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTAppLauncher_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5D32C17FA7524FD066730C9A254F869F /* WTLauncherCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WTLauncherCenter.m; path = WTAppLauncher/Classes/WTLauncherCenter.m; sourceTree = "<group>"; };
+		5F803C72A9348A42FB3B7961511AD3AF /* WTAppLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTAppLauncher.framework; path = WTAppLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62343D41F626BEF09B3C8B6507F3F355 /* WTLauncher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WTLauncher.m; path = WTAppLauncher/Classes/WTLauncher.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6FC7F893CB29871268B055AB3AC9A53E /* WTAppLauncher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WTAppLauncher.modulemap; sourceTree = "<group>"; };
+		7A08A3AB210BE0C75B526D07AEBEF2C3 /* WTLauncherCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WTLauncherCenter.h; path = WTAppLauncher/Classes/WTLauncherCenter.h; sourceTree = "<group>"; };
+		86419CF8AEDF5E245B9C51FF6EEB6DF2 /* Pods-WTAppLauncher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTAppLauncher_Tests-dummy.m"; sourceTree = "<group>"; };
+		8D53137EBFEED60385BB473684CC7EB7 /* WTAppLauncher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTAppLauncher-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A2E92E80C42A2B43851471EBEB91C6 /* WTAppLauncher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTAppLauncher.xcconfig; sourceTree = "<group>"; };
+		A2B52ED925110FA5A123D057D2972070 /* Pods-WTAppLauncher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTAppLauncher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC8B8E4D026F76CD653B7C16F8A2D53F /* Pods-WTAppLauncher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTAppLauncher_Example-resources.sh"; sourceTree = "<group>"; };
+		ADA1F50ADF152C14FCBE928757E47E57 /* WTAppLauncher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTAppLauncher-prefix.pch"; sourceTree = "<group>"; };
+		E70B542553EFCA05664D6B15AB3AE4C7 /* Pods-WTAppLauncher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTAppLauncher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ECEB646254E9A9D5DDEC0607DE23F12E /* Pods-WTAppLauncher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WTAppLauncher_Example.modulemap"; sourceTree = "<group>"; };
+		ED9DCD1DF17A96C66533AE47D60F3A21 /* Pods-WTAppLauncher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTAppLauncher_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EFE75604727F514B20DE7F96DCFC742A /* Pods-WTAppLauncher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTAppLauncher_Example-umbrella.h"; sourceTree = "<group>"; };
+		F3B2115E9A7175F2D6F9B55497424BCA /* WTAppLauncher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTAppLauncher-umbrella.h"; sourceTree = "<group>"; };
+		FD96B736D25FD434C3882654DC249350 /* WTLauncher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WTLauncher.h; path = WTAppLauncher/Classes/WTLauncher.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C2E8CF20BC4CFBD785279680F577C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F52ECF5E9437A605945E2CCFB45559E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7190080E1666F546E73E21481B3921E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609F221BA04FA472F516CF0F6DAB5D99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7548009C62C2744D5A9DBE47692E6FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00A05BD5935A25ABE7E9577928A5BDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054A3D8C79F8D5A6F6511628F91F4B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2E430BD80D49CCB7579A398707A72 /* Pods_WTAppLauncher_Example.framework */,
+				2915AC7467B9E4F289CE5C1060B4F664 /* Pods_WTAppLauncher_Tests.framework */,
+				5F803C72A9348A42FB3B7961511AD3AF /* WTAppLauncher.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B235CD01581429DACB44CD55A75182B /* WTAppLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				FD96B736D25FD434C3882654DC249350 /* WTLauncher.h */,
+				62343D41F626BEF09B3C8B6507F3F355 /* WTLauncher.m */,
+				7A08A3AB210BE0C75B526D07AEBEF2C3 /* WTLauncherCenter.h */,
+				5D32C17FA7524FD066730C9A254F869F /* WTLauncherCenter.m */,
+				DB165342645EAB56D3937DDE89C5A018 /* Support Files */,
+			);
+			name = WTAppLauncher;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6B1632309EE25A030AE79260DF10EAF0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B235CD01581429DACB44CD55A75182B /* WTAppLauncher */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6B1632309EE25A030AE79260DF10EAF0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				054A3D8C79F8D5A6F6511628F91F4B03 /* Products */,
+				B7911B634262927B0A2A7A510D06A305 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F641DD882DB0BAD9AD6C2E9A92501E9 /* Pods-WTAppLauncher_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5213BAE80B8FC4D364E9D67E8A88113B /* Info.plist */,
+				ECEB646254E9A9D5DDEC0607DE23F12E /* Pods-WTAppLauncher_Example.modulemap */,
+				A2B52ED925110FA5A123D057D2972070 /* Pods-WTAppLauncher_Example-acknowledgements.markdown */,
+				1E316775CADF15D99250EED597FF7453 /* Pods-WTAppLauncher_Example-acknowledgements.plist */,
+				2770BAE2531F97A513BB857566043770 /* Pods-WTAppLauncher_Example-dummy.m */,
+				018751FCE8ABD7630ADCD44591F31046 /* Pods-WTAppLauncher_Example-frameworks.sh */,
+				AC8B8E4D026F76CD653B7C16F8A2D53F /* Pods-WTAppLauncher_Example-resources.sh */,
+				EFE75604727F514B20DE7F96DCFC742A /* Pods-WTAppLauncher_Example-umbrella.h */,
+				516852E164E751163D2650D8B5223A52 /* Pods-WTAppLauncher_Example.debug.xcconfig */,
+				ED9DCD1DF17A96C66533AE47D60F3A21 /* Pods-WTAppLauncher_Example.release.xcconfig */,
+			);
+			name = "Pods-WTAppLauncher_Example";
+			path = "Target Support Files/Pods-WTAppLauncher_Example";
+			sourceTree = "<group>";
+		};
+		8A4E0226FDDCC9B17FBB6851D6B35CBF /* Pods-WTAppLauncher_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				045880185C63BA695135F28471C64EB1 /* Info.plist */,
+				06EA70C081A34F0443063597DE3BD097 /* Pods-WTAppLauncher_Tests.modulemap */,
+				4EEF08473A40F5F4580660D73D7CAC89 /* Pods-WTAppLauncher_Tests-acknowledgements.markdown */,
+				E70B542553EFCA05664D6B15AB3AE4C7 /* Pods-WTAppLauncher_Tests-acknowledgements.plist */,
+				86419CF8AEDF5E245B9C51FF6EEB6DF2 /* Pods-WTAppLauncher_Tests-dummy.m */,
+				5A80BBE23B5F00B4ACA0CD80D8485170 /* Pods-WTAppLauncher_Tests-frameworks.sh */,
+				1D53F6677D0DAB111E3DC00DE789B78C /* Pods-WTAppLauncher_Tests-resources.sh */,
+				33476211BD1FC0FE239CF26E02C12569 /* Pods-WTAppLauncher_Tests-umbrella.h */,
+				0F7FF1EDC4417E64EE449B2C6E6FB1A8 /* Pods-WTAppLauncher_Tests.debug.xcconfig */,
+				32C84086C110FAF522A8FF39D2216DDC /* Pods-WTAppLauncher_Tests.release.xcconfig */,
+			);
+			name = "Pods-WTAppLauncher_Tests";
+			path = "Target Support Files/Pods-WTAppLauncher_Tests";
+			sourceTree = "<group>";
+		};
+		B7911B634262927B0A2A7A510D06A305 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F641DD882DB0BAD9AD6C2E9A92501E9 /* Pods-WTAppLauncher_Example */,
+				8A4E0226FDDCC9B17FBB6851D6B35CBF /* Pods-WTAppLauncher_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB165342645EAB56D3937DDE89C5A018 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				495A32B157D85E356E7D5E6A0F3A7BAB /* Info.plist */,
+				6FC7F893CB29871268B055AB3AC9A53E /* WTAppLauncher.modulemap */,
+				A2A2E92E80C42A2B43851471EBEB91C6 /* WTAppLauncher.xcconfig */,
+				8D53137EBFEED60385BB473684CC7EB7 /* WTAppLauncher-dummy.m */,
+				ADA1F50ADF152C14FCBE928757E47E57 /* WTAppLauncher-prefix.pch */,
+				F3B2115E9A7175F2D6F9B55497424BCA /* WTAppLauncher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WTAppLauncher";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F8491CC51AF9B84BED63329E450D10B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC210BF43AE85233BE50012D0FA4860 /* Pods-WTAppLauncher_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A96BDE5D687B51B59930A1A1A225DFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF91D7D5EEBD150B383DD18CCF44D83 /* Pods-WTAppLauncher_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B70C6E1DC76DDC4743A1063FFB5DE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F565F9B327EE07C31A00BAD9A43B19F /* WTAppLauncher-umbrella.h in Headers */,
+				BBDAA9AB7210514818FA064257419724 /* WTLauncher.h in Headers */,
+				530A2318C782FCEE5A4E061CA6B0DC57 /* WTLauncherCenter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9325F2FCD14AE4F8A49D9806CA9B60E /* WTAppLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C66023DED086E81F4D89BDA14A15B8C /* Build configuration list for PBXNativeTarget "WTAppLauncher" */;
+			buildPhases = (
+				D0FBF30DBB034A73FA7440627CE3363F /* Sources */,
+				7190080E1666F546E73E21481B3921E9 /* Frameworks */,
+				E6B70C6E1DC76DDC4743A1063FFB5DE5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTAppLauncher;
+			productName = WTAppLauncher;
+			productReference = 5F803C72A9348A42FB3B7961511AD3AF /* WTAppLauncher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D84B689A58102B3BA3DB2FCCC757DD86 /* Pods-WTAppLauncher_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F8306F573119BCEFA561925D4056F1 /* Build configuration list for PBXNativeTarget "Pods-WTAppLauncher_Example" */;
+			buildPhases = (
+				3BDD3B1E4798DD1A35B9C093AABFE90B /* Sources */,
+				5C2E8CF20BC4CFBD785279680F577C35 /* Frameworks */,
+				3F8491CC51AF9B84BED63329E450D10B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B387F48808304E4D1F56A12CD0971EE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-WTAppLauncher_Example";
+			productName = "Pods-WTAppLauncher_Example";
+			productReference = 1FC2E430BD80D49CCB7579A398707A72 /* Pods_WTAppLauncher_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF6172C55C08CF0A54549F2379458CFD /* Pods-WTAppLauncher_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302A2BF0537F35B943A7042BE1D8C937 /* Build configuration list for PBXNativeTarget "Pods-WTAppLauncher_Tests" */;
+			buildPhases = (
+				38EC904352A062B002C930219692DE58 /* Sources */,
+				7548009C62C2744D5A9DBE47692E6FEE /* Frameworks */,
+				5A96BDE5D687B51B59930A1A1A225DFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WTAppLauncher_Tests";
+			productName = "Pods-WTAppLauncher_Tests";
+			productReference = 2915AC7467B9E4F289CE5C1060B4F664 /* Pods_WTAppLauncher_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 054A3D8C79F8D5A6F6511628F91F4B03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D84B689A58102B3BA3DB2FCCC757DD86 /* Pods-WTAppLauncher_Example */,
+				DF6172C55C08CF0A54549F2379458CFD /* Pods-WTAppLauncher_Tests */,
+				A9325F2FCD14AE4F8A49D9806CA9B60E /* WTAppLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38EC904352A062B002C930219692DE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8721DFF4F2E1B8D4EC1DFECB0B01DD0F /* Pods-WTAppLauncher_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3B1E4798DD1A35B9C093AABFE90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2118A76274056CC1FDCFCB54910C14F1 /* Pods-WTAppLauncher_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0FBF30DBB034A73FA7440627CE3363F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C351F40CF4480E875485EB666BB03B8E /* WTAppLauncher-dummy.m in Sources */,
+				AC986140337C2CB3E78B12DC208B5AC2 /* WTLauncher.m in Sources */,
+				A7ACDD32815D2ACF85706AE324B05F6E /* WTLauncherCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B387F48808304E4D1F56A12CD0971EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WTAppLauncher;
+			target = A9325F2FCD14AE4F8A49D9806CA9B60E /* WTAppLauncher */;
+			targetProxy = 58C6DD7249956CCD90F77C30CAB6BE7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C3ED16E144B9A188CC88F2343EB3B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		51F393FE91B4B6C835FB4B238187AD09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6121BF44F0A9EBB27A4827F12D39823C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516852E164E751163D2650D8B5223A52 /* Pods-WTAppLauncher_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WTAppLauncher_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTAppLauncher_Example/Pods-WTAppLauncher_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WTAppLauncher_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CD7082A237B602C52EA34948A8265CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C84086C110FAF522A8FF39D2216DDC /* Pods-WTAppLauncher_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WTAppLauncher_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTAppLauncher_Tests/Pods-WTAppLauncher_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WTAppLauncher_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D657C749BFF32FB092CADC0530ABD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A2E92E80C42A2B43851471EBEB91C6 /* WTAppLauncher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WTAppLauncher/WTAppLauncher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTAppLauncher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WTAppLauncher/WTAppLauncher.modulemap";
+				PRODUCT_NAME = WTAppLauncher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA513AB54A7864DCCB8318B124E64CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9DCD1DF17A96C66533AE47D60F3A21 /* Pods-WTAppLauncher_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WTAppLauncher_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTAppLauncher_Example/Pods-WTAppLauncher_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WTAppLauncher_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2BA7AD06FE975D68D922D1D4EBB8C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A2E92E80C42A2B43851471EBEB91C6 /* WTAppLauncher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WTAppLauncher/WTAppLauncher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTAppLauncher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WTAppLauncher/WTAppLauncher.modulemap";
+				PRODUCT_NAME = WTAppLauncher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D390C53604E649241DEDFB8E1BBEF218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7FF1EDC4417E64EE449B2C6E6FB1A8 /* Pods-WTAppLauncher_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WTAppLauncher_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTAppLauncher_Tests/Pods-WTAppLauncher_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WTAppLauncher_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C66023DED086E81F4D89BDA14A15B8C /* Build configuration list for PBXNativeTarget "WTAppLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BA7AD06FE975D68D922D1D4EBB8C35 /* Debug */,
+				6D657C749BFF32FB092CADC0530ABD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F393FE91B4B6C835FB4B238187AD09 /* Debug */,
+				1C3ED16E144B9A188CC88F2343EB3B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302A2BF0537F35B943A7042BE1D8C937 /* Build configuration list for PBXNativeTarget "Pods-WTAppLauncher_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D390C53604E649241DEDFB8E1BBEF218 /* Debug */,
+				6CD7082A237B602C52EA34948A8265CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F8306F573119BCEFA561925D4056F1 /* Build configuration list for PBXNativeTarget "Pods-WTAppLauncher_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6121BF44F0A9EBB27A4827F12D39823C /* Debug */,
+				CA513AB54A7864DCCB8318B124E64CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

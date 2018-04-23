@@ -1,0 +1,6 @@
+framework module WTAppLauncher {
+  umbrella header "WTAppLauncher-umbrella.h"
+
+  export *
+  module * { export * }
+}
